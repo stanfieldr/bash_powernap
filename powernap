@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo 'Go to bed, look forward to the rodeo when you wake up!'
+
+# Runs everything after ./powernap, for example ./powernap echo -e 'foo\n'
+($"$@")
+
+
+while [ true ]
+do
+    spd-say 'Wake up!'
+    echo 'Wake up!'
+    sleep 3
+done
